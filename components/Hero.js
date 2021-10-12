@@ -10,7 +10,7 @@ const Hero = ({ results }) => {
       <Rerousel itemRef={tvShow}>
         {results.map(result => {
           return (
-            <div className="relative text-gray-200 bg-blend-darken">
+            <div className="relative text-gray-200" key={result.id}>
               <div className="bg-black ">
                 <img
                   src={
