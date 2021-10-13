@@ -18,7 +18,16 @@ const Navbar = () => {
           <h3 className="cursor-pointer">Coming Soon</h3>
         </Link>
       </div>
-      <div className="flex justify-center items-center w-1/3"></div>
+      <div className="flex justify-center items-center w-1/3">
+        <Link href="/auth">
+          <h3 className="cursor-pointer">Sign In</h3>
+        </Link>
+        <Link href="/auth">
+          <button type="submit" className="p-3 mx-5 bg-blue-600 rounded-lg">
+            Sign Up
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
