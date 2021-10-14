@@ -12,7 +12,7 @@ const Hero = ({ results }) => {
           return (
             <div className="relative text-gray-200" key={result.id}>
               <div className="bg-black ">
-                <Image
+                <img
                   src={
                     `${BASE_URL}${
                       result.backdrop_path || result.poster_path
@@ -24,19 +24,6 @@ const Hero = ({ results }) => {
                   alt={result.name}
                   key={result.id}
                   className="opacity-80 hidden md:flex"
-                />
-                <Image
-                  src={
-                    `${BASE_URL}${
-                      result.backdrop_path || result.poster_path
-                    }` || `${BASE_URL}${result.poster_path}`
-                  }
-                  height={500}
-                  width={400}
-                  ref={tvShow}
-                  alt={result.name}
-                  key={result.id}
-                  className="opacity-80 flex md:hidden"
                 />
               </div>
 
